@@ -1,22 +1,21 @@
 
-import { useState } from 'react';
+
 import './App.css';
+import Counter from './Featuers/Counter';
 
 
 function App() {
-  const [count, setCount]=useState(0);
+  
   return (
     <div className='App'>
 
    <h1> redux </h1>
-   
+   <Counter/>
+    </div>
 
-   <button className='button' onClick={()=>{setCount(count+1)}}>+</button>
-   <span className='value'>{count}</span>
-   <button className='button' onClick={()=>{setCount(count-1)}}>-</button>
+   
   
     
-    </div>
   );
 }
 
